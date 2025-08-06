@@ -1,0 +1,38 @@
+#!/usr/bin/expect -f
+
+# === Get Arguments ===
+if {[llength $argv] < 2} {
+    puts "Usage: ./plant_ssh.expect <host> <username> <password>"
+    exit 1
+}
+
+set HOST [lindex $argv 0]
+set USER [lindex $argv 1]
+set PASS [lindex $argv 2]
+
+# === Configuration ===
+set timeout 10
+set SSH_KEY "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD..."  ;# replace with your public key
+
+# === Start Telnet Session ===
+spawn telnet $HOST
+
+expect "login:"
+send "$USER\r"
+
+expect "Password:"
+send "$PASS\r"
+
+# Wait for shell prompt
+expect "$ "
+
+# Plant SSH key
+send "mkdir -p ~/.ssh\r"
+send "echo '$SSH_KEY' >> ~/.ssh/authorized_keys\r"
+send "chmod 700 ~/.ssh\r"
+send "chmod 600 ~/.ssh/authorized_keys\r"
+
+# Exit
+send "exit\r"
+expect eof
+
