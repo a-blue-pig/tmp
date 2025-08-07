@@ -1,0 +1,23 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-07 09:33 EDT
+Nmap scan report for 10.1.20.55
+Host is up (0.00044s latency).
+Not shown: 986 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           Microsoft ftpd
+25/tcp   open  smtp          Microsoft ESMTP 6.0.2600.5512
+80/tcp   open  http          Microsoft IIS httpd 5.1
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  ssl/https?
+445/tcp  open  microsoft-ds  Microsoft Windows XP microsoft-ds
+1025/tcp open  msrpc         Microsoft Windows RPC
+1029/tcp open  msrpc         Microsoft Windows RPC
+1801/tcp open  msmq?
+2103/tcp open  msrpc         Microsoft Windows RPC
+2105/tcp open  msrpc         Microsoft Windows RPC
+2107/tcp open  msrpc         Microsoft Windows RPC
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+Service Info: Host: WXPSP2-3; OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 83.18 seconds

@@ -1,0 +1,73 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-05 13:31 EDT
+Nmap scan report for 10.1.20.104
+Host is up (0.00087s latency).
+Not shown: 977 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+25/tcp   open  smtp?
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 6.0
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2025-08-05 17:31:14Z)
+110/tcp  open  pop3
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: w2k3sp0-3.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+1025/tcp open  msrpc         Microsoft Windows RPC
+1026/tcp open  msrpc         Microsoft Windows RPC
+1028/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+1041/tcp open  msrpc         Microsoft Windows RPC
+1042/tcp open  msrpc         Microsoft Windows RPC
+1045/tcp open  msrpc         Microsoft Windows RPC
+1049/tcp open  msrpc         Microsoft Windows RPC
+1060/tcp open  msrpc         Microsoft Windows RPC
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: w2k3sp0-3.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port25-TCP:V=7.95%I=7%D=8/5%Time=68923FE2%P=x86_64-pc-linux-gnu%r(NULL,
+SF:3A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x202025\x201
+SF:3:31:08\x20-0400\x20\r\n")%r(Hello,11F,"220\x20W2K3SP0-1\x20Dr\.\x20TLa
+SF:cey\x20Tue,\x205\x20Aug\x202025\x2013:31:08\x20-0400\x20\r\n250-W2K3SP0
+SF:-1\x20Hello\x20\[10\.1\.60\.150\]\r\n250-AUTH\x20GSSAPI\x20NTLM\x20LOGI
+SF:N\r\n250-AUTH=LOGIN\r\n250-TURN\r\n250-SIZE\x202097152\r\n250-ETRN\r\n2
+SF:50-PIPELINING\r\n250-DSN\r\n250-ENHANCEDSTATUSCODES\r\n250-8bitmime\r\n
+SF:250-BINARYMIME\r\n250-CHUNKING\r\n250-VRFY\r\n250\x20OK\r\n")%r(Help,BB
+SF:,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x202025\x2013:
+SF:31:21\x20-0400\x20\r\n214-This\x20server\x20supports\x20the\x20followin
+SF:g\x20commands:\r\n214\x20HELO\x20EHLO\x20STARTTLS\x20RCPT\x20DATA\x20RS
+SF:ET\x20MAIL\x20QUIT\x20HELP\x20AUTH\x20TURN\x20ETRN\x20BDAT\x20VRFY\r\n"
+SF:)%r(GenericLines,3A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x2
+SF:0Aug\x202025\x2013:31:29\x20-0400\x20\r\n")%r(GetRequest,5A,"220\x20W2K
+SF:3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x202025\x2013:31:34\x20-04
+SF:00\x20\r\n500\x205\.3\.3\x20Unrecognized\x20command\r\n")%r(HTTPOptions
+SF:,5A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x202025\x20
+SF:13:31:39\x20-0400\x20\r\n500\x205\.3\.3\x20Unrecognized\x20command\r\n"
+SF:)%r(RTSPRequest,5A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20
+SF:Aug\x202025\x2013:31:44\x20-0400\x20\r\n500\x205\.3\.3\x20Unrecognized\
+SF:x20command\r\n")%r(RPCCheck,3A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20T
+SF:ue,\x205\x20Aug\x202025\x2013:31:49\x20-0400\x20\r\n")%r(DNSVersionBind
+SF:ReqTCP,3A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x2020
+SF:25\x2013:31:54\x20-0400\x20\r\n")%r(DNSStatusRequestTCP,3A,"220\x20W2K3
+SF:SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x202025\x2013:31:59\x20-040
+SF:0\x20\r\n")%r(SSLSessionReq,3A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20T
+SF:ue,\x205\x20Aug\x202025\x2013:32:04\x20-0400\x20\r\n")%r(TerminalServer
+SF:Cookie,5A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\x205\x20Aug\x2020
+SF:25\x2013:32:09\x20-0400\x20\r\n500\x205\.3\.3\x20Unrecognized\x20comman
+SF:d\r\n")%r(TLSSessionReq,3A,"220\x20W2K3SP0-1\x20Dr\.\x20TLacey\x20Tue,\
+SF:x205\x20Aug\x202025\x2013:32:14\x20-0400\x20\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port110-TCP:V=7.95%I=7%D=8/5%Time=68923FE2%P=x86_64-pc-linux-gnu%r(NULL
+SF:,3C,"\+OK\x20Dr\.\x20TLacey\x20<18879062@W2K3SP0-1\.w2k3sp0-3\.local>\x
+SF:20ready\.\r\n")%r(GenericLines,57,"\+OK\x20Dr\.\x20TLacey\x20<18879062@
+SF:W2K3SP0-1\.w2k3sp0-3\.local>\x20ready\.\r\n-ERR\x20Unacceptable\x20comm
+SF:and\r\n")%r(HTTPOptions,57,"\+OK\x20Dr\.\x20TLacey\x20<18890125@W2K3SP0
+SF:-1\.w2k3sp0-3\.local>\x20ready\.\r\n-ERR\x20Unacceptable\x20command\r\n
+SF:");
+Service Info: Host: W2K3SP0-1; OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_server_2003, cpe:/o:microsoft:windows_xp
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 165.09 seconds
